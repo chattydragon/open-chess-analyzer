@@ -7,8 +7,8 @@ project evolves toward full chess-engine backed analysis.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 import re
+from dataclasses import dataclass
 
 HEADER_RE = re.compile(r'^\[(?P<key>[A-Za-z0-9_]+)\s+"(?P<value>.*)"\]$')
 MOVE_NUMBER_RE = re.compile(r'\b\d+\.(?:\.\.)?')
