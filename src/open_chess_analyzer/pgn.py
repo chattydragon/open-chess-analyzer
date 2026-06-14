@@ -38,6 +38,7 @@ class GameSummary:
 
     @property
     def move_count(self) -> int:
+        """Number of half-moves (plies) in the mainline."""
         return len(self.moves)
 
 
@@ -101,6 +102,6 @@ def summarize_pgn(pgn_text: str) -> str:
         f"- White: {game.white}",
         f"- Black: {game.black}",
         f"- Result: {game.result}",
-        f"- Moves: {game.move_count}",
+        f"- Moves (plies): {game.move_count}",
         "",
     ])

@@ -30,7 +30,7 @@ class PgnParserTests(unittest.TestCase):
         summary = summarize_pgn(SAMPLE)
         self.assertIn("# Game Summary", summary)
         self.assertIn("- White: Alice", summary)
-        self.assertIn("- Moves: 6", summary)
+        self.assertIn("- Moves (plies): 6", summary)
 
     def test_strips_comments_and_variations(self):
         pgn = (

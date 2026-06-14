@@ -11,7 +11,7 @@ Many chess players export PGN files from Lichess, Chess.com, or tournament softw
 ## Features
 
 - Parse PGN headers such as players, result, event, site, and date
-- Count moves from PGN movetext
+- Count half-moves (plies) from PGN movetext
 - Detect result and basic game metadata
 - Generate Markdown analysis summaries
 - Provide sample PGN data and tests
@@ -38,11 +38,16 @@ Example output:
 ```markdown
 # Game Summary
 
+- Event: Club Training Game
+- Site: Local Club
+- Date: 2026.06.14
 - White: Alice
 - Black: Bob
 - Result: 1-0
-- Moves: 10
+- Moves (plies): 20
 ```
+
+`Moves (plies)` counts half-moves; the sample game is 10 full moves = 20 plies.
 
 ## Development
 
