@@ -14,7 +14,7 @@ Thank you for considering a contribution.
 ## Development setup
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/open-chess-analyzer.git
+git clone https://github.com/chattydragon/open-chess-analyzer.git
 cd open-chess-analyzer
 python -m pip install -e .
 python -m unittest discover -s tests

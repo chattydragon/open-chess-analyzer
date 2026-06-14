@@ -20,7 +20,7 @@ Many chess players export PGN files from Lichess, Chess.com, or tournament softw
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/open-chess-analyzer.git
+git clone https://github.com/chattydragon/open-chess-analyzer.git
 cd open-chess-analyzer
 python -m pip install -e .
 ```
